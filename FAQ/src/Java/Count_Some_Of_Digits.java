@@ -6,7 +6,7 @@ public class Count_Some_Of_Digits {
 	
 		
 		// New new new
-		
+		// vika
 		
 
 	}
