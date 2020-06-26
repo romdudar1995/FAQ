@@ -18,6 +18,10 @@ public class Count_number {
 		}
 		
 		System.out.println("Number of digits: " +count);
+		
+		
+		// Comment
+		
 	}
 
 }
