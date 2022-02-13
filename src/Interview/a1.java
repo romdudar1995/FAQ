@@ -21,15 +21,26 @@ public class a1 {
 		
 		System.out.println(Arrays.toString(a));
 
-		
-//		System.out.println(a.length());
-//		System.out.println(a.charAt(0));
+
 		
 		
+		System.out.println("\"Hello\"");
 		
+		String s1 = "abcd";
+		
+		System.out.println(s1.lastIndexOf(""));
 		
 		
 
+	}
+	
+	
+	public static String getXpath(String name) {
+		
+		String xpath = "//input[@id='"+name+"']";
+		
+		return xpath;
+		
 	}
 
 }
