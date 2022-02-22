@@ -26,7 +26,7 @@ public class RegEx {
 		
 		
 		System.out.println(Pattern.matches("[xyz]", "x"));  // true [x or y or z]
-		System.out.println(Pattern.matches("[xyz]?", "xx"));  // flase [x occurs more than (?) one time ]
+		System.out.println(Pattern.matches("[xyz]?", "xx"));  // false [x occurs more than (?) one time ]
 		System.out.println(Pattern.matches("[xyz]+", "xx"));  // true [x occurs more than (+) one time ]
 		System.out.println(Pattern.matches("[xyz]*", "yyyzzzz"));  // true [x,y or z occurs more than (*) one time or zero ]
 
