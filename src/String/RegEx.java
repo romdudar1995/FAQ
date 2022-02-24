@@ -13,23 +13,32 @@ public class RegEx {
 
 		String regex = ".*http://.*";
 
+
 		boolean matches = Pattern.matches(regex, text);
 
 		System.out.println("matches = " + matches);
 		
 		
-		
-		// System.out.println(checkerStr("Some text written by me", ".*me.*"));
+		System.out.println("checkerStr - "+checkerStr("Some text written by me", ".*\\S.*"));
+		 //System.out.println("checkerStr - "+checkerStr("Some text written by me", ".*me.*"));
 		//System.out.println(checkerStr("Some text written by me", ".*text.*"));
 		
 		System.out.println(checkerStr("Dtext2D", ".*[0-3].*"));
 		
 		
-		System.out.println(Pattern.matches("[xyz]", "x"));  // true [x or y or z]
-		System.out.println(Pattern.matches("[xyz]?", "xx"));  // false [x occurs more than (?) one time ]
-		System.out.println(Pattern.matches("[xyz]+", "xx"));  // true [x occurs more than (+) one time ]
-		System.out.println(Pattern.matches("[xyz]*", "yyyzzzz"));  // true [x,y or z occurs more than (*) one time or zero ]
+		System.out.println(Pattern.matches(".s", "as"));//true (2nd char is s)  
+		System.out.println(Pattern.matches(".s", "mk"));//false (2nd char is not s)  
+		System.out.println(Pattern.matches(".s", "mst"));//false (has more than 2 char)  
+		
+		
+		System.out.println(Pattern.matches("[amn]", "abcd"));//false (not a or m or n)  
+		System.out.println(Pattern.matches("[amn]", "a"));//true (among a or m or n)  
+		System.out.println(Pattern.matches("[amn]", "ammmna"));//false (m and a comes more than once)  
+		
+		
+		System.out.println(Pattern.matches("[amn]?", "am"));//false (a or m or n must come one time)  
 
+		
 	}
 	
 	
